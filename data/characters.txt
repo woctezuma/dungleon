@@ -1,0 +1,20 @@
+Archer
+Bat
+Chest
+Coins
+Dragon
+Frog
+Blade Orc
+The King
+Mage
+Necromancer
+Axe Orc
+Skeleton
+Spider
+Bandit
+N/A
+Relic
+Villager
+Knight
+Sorcerer
+Zombie
