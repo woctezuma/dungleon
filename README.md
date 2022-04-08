@@ -30,6 +30,7 @@ python download_puzzle_solutions.py
 - The [official website][game]
 - An [archive of solutions][solutions]
 
+[python-download]: <https://www.python.org/downloads/>
 [game]: <https://www.dungleon.com/>
 [solutions]: <https://public.amplenote.com/v9pKb8k54NRetqnjUodLsFKF>
 [img-cover]: <https://github.com/woctezuma/dungleon/wiki/img/cover.png>
