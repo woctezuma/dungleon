@@ -1,6 +1,6 @@
 # Dungleon
 
-This repository contains Python code to study the rules of Dungleon.
+This repository contains Python code to study the hidden rules of Dungleon.
 
 [![Dungleon][img-cover]][game]
 
