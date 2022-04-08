@@ -35,6 +35,7 @@ def load_sprites_as_img_list(as_gray=True, trim_sprites=True, scale=1.0):
             small_element = block
 
         if scale != 1:
+            # NB: do not rescale() before extract_square_blocks(), or block shape might not divide the image shape!
             small_element = rescale(small_element, scale)
 
         trimmed_sprites.append(small_element)
