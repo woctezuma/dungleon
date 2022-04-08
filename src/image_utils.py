@@ -35,3 +35,10 @@ def auto_crop(img):
     pil_img = Image.fromarray(img).crop(bbox)
 
     return np.array(pil_img)
+
+
+def show_image(img, max_value=255):
+    img = img * max_value / img.max()
+    Image.fromarray(img).show()
+
+    return
