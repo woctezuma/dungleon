@@ -11,10 +11,15 @@ def get_rescale_factor():
     return trimmed_knight_puzzle_width / trimmed_knight_sprite_width
 
 
-def load_sprites_as_img(as_gray=True):
+def load_sprites_as_img(as_gray=True, scale=1.0):
     fname = get_fname_for_character_sprites()
+    img = load_img(fname, as_gray=as_gray)
 
-    return load_img(fname, as_gray=as_gray)
+    if scale != 1:
+        print("Scaling the image by a factor {scale:.2f}")
+        img = rescale(img, scale)
+
+    return img
 
 
 def load_sprites_as_img_list(as_gray=True, trim_sprites=True, scale=1.0):
