@@ -2,7 +2,7 @@
 
 This repository contains Python code to study the rules of Dungleon.
 
-![Dungleon][img-cover]
+[![Dungleon][img-cover]][game]
 
 ## Characters
 
