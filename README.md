@@ -8,6 +8,15 @@ This repository contains Python code to study the rules of Dungleon.
 
 [![Sprites][img-sprites]][img-sprites-original]
 
+## Requirements
+
+- Install the latest version of [Python 3.X][python-download].
+- Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## References
 
 - The [official website][game]
