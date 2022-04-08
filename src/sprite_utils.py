@@ -13,8 +13,14 @@ def load_sprites_as_img_list(as_gray=True, trim_sprites=True):
     img = load_sprites_as_img(as_gray=as_gray)
     sprites = extract_square_blocks(img)
 
-    if trim_sprites:
-        for i, block in enumerate(sprites):
-            sprites[i] = auto_crop(block)
+    trimmed_sprites = []
+    for block in sprites:
 
-    return sprites
+        if trim_sprites:
+            small_element = auto_crop(block)
+        else:
+            small_element = block
+
+        trimmed_sprites.append(small_element)
+
+    return trimmed_sprites
