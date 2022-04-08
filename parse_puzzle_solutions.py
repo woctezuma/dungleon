@@ -7,13 +7,15 @@ from src.data_utils import (
 from src.image_utils import auto_crop, show_image
 from src.load_utils import load_txt, load_img
 from src.puzzle_utils import extract_puzzle_elements
-from src.sprite_utils import load_sprites_as_img_list
+from src.sprite_utils import load_sprites_as_img_list, get_rescale_factor
 
 
 def main():
     character_names = load_txt(fname=get_fname_for_character_names())
 
-    sprites = load_sprites_as_img_list(as_gray=True, trim_sprites=True)
+    sprites = load_sprites_as_img_list(
+        as_gray=True, trim_sprites=True, scale=get_rescale_factor()
+    )
     for name, e in zip(character_names, sprites):
         print(f"{name} -> {e.shape}")
 

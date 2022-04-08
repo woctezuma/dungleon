@@ -5,6 +5,12 @@ from src.image_utils import extract_square_blocks, auto_crop
 from src.load_utils import load_img
 
 
+def get_rescale_factor():
+    trimmed_knight_puzzle_width = 86
+    trimmed_knight_sprite_width = 52
+    return trimmed_knight_puzzle_width / trimmed_knight_sprite_width
+
+
 def load_sprites_as_img(as_gray=True):
     fname = get_fname_for_character_sprites()
 
