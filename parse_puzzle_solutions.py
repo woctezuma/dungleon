@@ -14,8 +14,8 @@ def main():
     character_names = load_txt(fname=get_fname_for_character_names())
 
     sprites = load_sprites_as_img_list(as_gray=True, trim_sprites=True)
-    for e in sprites:
-        print(e.shape)
+    for name, e in zip(character_names, sprites):
+        print(f"{name} -> {e.shape}")
 
     solution_fnames = glob(f"{get_solution_image_folder()}*.jpg")
     puzzle_img = load_img(fname=solution_fnames[0], as_gray=True)
