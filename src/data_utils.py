@@ -13,17 +13,17 @@ def get_solution_image_folder():
     return folder_name
 
 
-def get_character_sprites():
+def get_fname_for_character_sprites():
     return get_data_folder() + "characters.png"
 
 
-def get_character_names():
+def get_fname_for_character_names():
     return get_data_folder() + "characters.txt"
 
 
-def get_character_emojis():
+def get_fname_for_character_emojis():
     return get_data_folder() + "emojis.txt"
 
 
-def get_solution_urls():
+def get_fname_for_solution_urls():
     return get_data_folder() + "solutions.txt"
