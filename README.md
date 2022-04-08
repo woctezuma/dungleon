@@ -17,6 +17,14 @@ This repository contains Python code to study the rules of Dungleon.
 pip install -r requirements.txt
 ```
 
+## Usage
+
+1) To download puzzles solutions for previous days, run:
+
+```bash
+python download_puzzle_solutions.py 
+```
+
 ## References
 
 - The [official website][game]
