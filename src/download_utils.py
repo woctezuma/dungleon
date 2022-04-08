@@ -17,7 +17,7 @@ def download_file(url, fname):
     return fname
 
 
-def download_archived_puzzle_solutions(urls, output_folder):
+def download_files(urls, output_folder):
     num_files = len(urls)
     assert num_files < 1000
 
