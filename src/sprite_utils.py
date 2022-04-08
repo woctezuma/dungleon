@@ -1,3 +1,5 @@
+from skimage.transform import rescale
+
 from src.data_utils import get_fname_for_character_sprites
 from src.image_utils import extract_square_blocks, auto_crop
 from src.load_utils import load_img
@@ -9,7 +11,7 @@ def load_sprites_as_img(as_gray=True):
     return load_img(fname, as_gray=as_gray)
 
 
-def load_sprites_as_img_list(as_gray=True, trim_sprites=True):
+def load_sprites_as_img_list(as_gray=True, trim_sprites=True, scale=1.0):
     img = load_sprites_as_img(as_gray=as_gray)
     sprites = extract_square_blocks(img)
 
@@ -20,6 +22,9 @@ def load_sprites_as_img_list(as_gray=True, trim_sprites=True):
             small_element = auto_crop(block)
         else:
             small_element = block
+
+        if scale != 1:
+            small_element = rescale(small_element, scale)
 
         trimmed_sprites.append(small_element)
 
