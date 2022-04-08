@@ -19,6 +19,7 @@ def download_file(url, fname):
 
 def download_archived_puzzle_solutions(urls, output_folder):
     num_files = len(urls)
+    assert num_files < 1000
 
     for i, url in enumerate(urls, start=1):
         day_no = f"{i:03}"
