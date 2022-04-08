@@ -22,9 +22,9 @@ def download_archived_puzzle_solutions(urls, output_folder):
     assert num_files < 1000
 
     for i, url in enumerate(urls, start=1):
-        day_no = f"{i:03}"
+        file_no = f"{i:03}"
         file_ext = get_file_ext(url)
-        output_fname = f"{output_folder}{day_no}.{file_ext}"
+        output_fname = f"{output_folder}{file_no}.{file_ext}"
 
         print(f"[{i:03}/{num_files:03}] Downloading {url} to {output_fname}")
         download_file(url, output_fname)
