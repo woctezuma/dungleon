@@ -30,3 +30,23 @@ def match_puzzle_element(sprites, puzzle_element, block_width=None, verbose=Fals
 def convert_sprite_abscissa_to_index(sprite_abscissa, block_width):
     sprite_index = math.floor(sprite_abscissa / block_width)
     return sprite_index
+
+
+def match_puzzle(sprites, puzzle, verbose=False):
+    parsed_puzzle = []
+
+    for puzzle_element in puzzle:
+        parsed_element = match_puzzle_element(sprites, puzzle_element, verbose=verbose)
+        parsed_puzzle.append(parsed_element)
+
+    return parsed_puzzle
+
+
+def match_all_puzzles(sprites, puzzles, verbose=False):
+    all_parsed_puzzles = []
+
+    for puzzle in puzzles:
+        parsed_puzzle = match_puzzle(sprites, puzzle, verbose=verbose)
+        all_parsed_puzzles.append(parsed_puzzle)
+
+    return all_parsed_puzzles
