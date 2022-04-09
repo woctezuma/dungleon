@@ -25,6 +25,14 @@ pip install -r requirements.txt
 python download_puzzle_solutions.py 
 ```
 
+2) To parse puzzles solutions with template matching, run:
+
+```bash
+python download_puzzle_solutions.py 
+```
+
+![Template matching][template-matching]
+
 ## References
 
 - The [official website][game]
@@ -36,3 +44,4 @@ python download_puzzle_solutions.py
 [img-cover]: <https://github.com/woctezuma/dungleon/wiki/img/cover.png>
 [img-sprites]: <https://github.com/woctezuma/dungleon/wiki/img/sprites/big.png>
 [img-sprites-original]: <https://www.dungleon.com/images/elements/big/sprites.png>
+[template-matching]: <https://github.com/woctezuma/dungleon/wiki/img/template_matching.png>
