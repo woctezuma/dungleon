@@ -1,5 +1,6 @@
 import numpy as np
 from skimage.feature import match_template
+from skimage.transform import rescale
 
 from src.convert_utils import convert_sprite_abscissa_to_index
 from src.display_utils import display_match
@@ -12,7 +13,12 @@ def match_puzzle_element(sprites, puzzle_element, block_width=None, verbose=Fals
 
     # Reference: https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_template.html
 
-    result = match_template(sprites, puzzle_element)
+    try:
+        result = match_template(sprites, puzzle_element)
+    except ValueError:
+        print(sprites.shape)
+        print(puzzle_element.shape)
+        result = match_template(sprites, rescale(puzzle_element, sprites.shape[0]/puzzle_element.shape[0]))
     ij = np.unravel_index(np.argmax(result), result.shape)
     x, y = ij[::-1]
 
