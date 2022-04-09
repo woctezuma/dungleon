@@ -37,7 +37,8 @@ def match_puzzle_element(sprites, puzzle_element, block_width=None, verbose=Fals
 def match_puzzle(sprites, puzzle, verbose=False):
     parsed_puzzle = []
 
-    for puzzle_element in puzzle:
+    for i, puzzle_element in enumerate(puzzle, start=1):
+        print(f"\t- element n°{i}/{len(puzzle)}")
         parsed_element = match_puzzle_element(sprites, puzzle_element, verbose=verbose)
         parsed_puzzle.append(parsed_element)
 
@@ -47,7 +48,8 @@ def match_puzzle(sprites, puzzle, verbose=False):
 def match_all_puzzles(sprites, puzzles, verbose=False):
     all_parsed_puzzles = []
 
-    for puzzle in puzzles:
+    for i, puzzle in enumerate(puzzles, start=1):
+        print(f"Parsing puzzle n°{i}")
         parsed_puzzle = match_puzzle(sprites, puzzle, verbose=verbose)
         all_parsed_puzzles.append(parsed_puzzle)
 
