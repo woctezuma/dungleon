@@ -1,12 +1,14 @@
 import numpy as np
 from skimage.feature import match_template
-from skimage.transform import rescale
 
 from src.convert_utils import convert_sprite_abscissa_to_index
 from src.display_utils import display_match
+from src.image_utils import auto_crop
 
 
-def match_puzzle_element(sprites, puzzle_element, block_width=None, verbose=False):
+def match_puzzle_element(
+    sprites, puzzle_element, block_width=None, factor=0.92, verbose=False
+):
     if block_width is None:
         # NB: these blocks are squares anyway.
         block_width = sprites.shape[0]
@@ -16,9 +18,10 @@ def match_puzzle_element(sprites, puzzle_element, block_width=None, verbose=Fals
     try:
         result = match_template(sprites, puzzle_element)
     except ValueError:
-        print(sprites.shape)
-        print(puzzle_element.shape)
-        result = match_template(sprites, rescale(puzzle_element, sprites.shape[0]/puzzle_element.shape[0]))
+        print(f"Sprite ({sprites.shape}) larger than template ({puzzle_element.shape})")
+        print(f"Using Otsu factor {factor} to remove the frame for this binary sprite.")
+        puzzle_element = auto_crop(puzzle_element, factor=factor)
+        result = match_template(sprites, puzzle_element)
     ij = np.unravel_index(np.argmax(result), result.shape)
     x, y = ij[::-1]
 
