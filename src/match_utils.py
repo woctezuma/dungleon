@@ -1,6 +1,8 @@
+import math
+
 import numpy as np
 from skimage.feature import match_template
-import math
+
 from src.display_utils import display_match
 
 
