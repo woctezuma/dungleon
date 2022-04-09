@@ -31,6 +31,8 @@ python download_puzzle_solutions.py
 python download_puzzle_solutions.py 
 ```
 
+After this step, you should have generated a file identical to [`data/solutions.md`][solutions-markdown].
+
 ![Template matching][template-matching]
 
 ## References
@@ -45,3 +47,4 @@ python download_puzzle_solutions.py
 [img-sprites]: <https://github.com/woctezuma/dungleon/wiki/img/sprites/big.png>
 [img-sprites-original]: <https://www.dungleon.com/images/elements/big/sprites.png>
 [template-matching]: <https://github.com/woctezuma/dungleon/wiki/img/template_matching.png>
+[solutions-markdown]: <data/solutions.md>
