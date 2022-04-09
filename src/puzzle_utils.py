@@ -26,7 +26,7 @@ def extract_puzzle_elements(img, trim_sprites=True, scale=1.0, verbose=True):
     if scale != 1:
         # NB: this is optional. Preferably, rescale sprites rather than puzzle elements,
         #     as this would scale better to a large number of archived puzzle solutions.
-        print("Scaling individual puzzle elements by a factor {scale:.2f}")
+        print(f"Scaling individual puzzle elements by a factor {scale:.2f}")
         puzzle_elements = rescale_img_list(puzzle_elements, scale)
 
     return puzzle_elements
