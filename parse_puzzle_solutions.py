@@ -7,7 +7,7 @@ from src.puzzle_utils import extract_puzzle_elements
 from src.sprite_utils import get_rescale_factor, load_sprites_as_img
 
 
-def main(puzzle_index=0, element_index=0):
+def main(puzzle_index=0, element_index=0, debug=False):
     # Sprites as a single image
     sprites = load_sprites_as_img(scale=get_rescale_factor())
 
@@ -19,7 +19,8 @@ def main(puzzle_index=0, element_index=0):
     puzzle_element = puzzle_elements[element_index]
 
     # Template matching
-    sprite_index = match_puzzle_element(sprites, puzzle_element, verbose=True)
+    if debug:
+        sprite_index = match_puzzle_element(sprites, puzzle_element, verbose=True)
 
     # Template matching for every puzzle
     all_puzzles = (
