@@ -23,17 +23,19 @@ def main(puzzle_index=0, element_index=0, debug=False):
     # Template matching
     if debug:
         sprite_index = match_puzzle_element(sprites, puzzle_element, verbose=True)
+    else:
+        # Template matching for every puzzle
+        all_puzzles = (
+            extract_puzzle_elements(load_img(fname), verbose=False)
+            for fname in puzzle_fnames
+        )
+        all_parsed_sprites = match_all_puzzles(sprites, all_puzzles)
 
-    # Template matching for every puzzle
-    all_puzzles = (
-        extract_puzzle_elements(load_img(fname), verbose=False)
-        for fname in puzzle_fnames
-    )
-    all_parsed_sprites = match_all_puzzles(sprites, all_puzzles)
-
-    # Conversion of sprite indices to character names, emojis, markdown, etc.
-    symbols = load_txt(fname=get_fname_for_character_markdown())
-    converted_sprites = convert_all_parsed_puzzles(all_parsed_sprites, symbols=symbols)
+        # Conversion of sprite indices to character names, emojis, markdown, etc.
+        symbols = load_txt(fname=get_fname_for_character_markdown())
+        converted_sprites = convert_all_parsed_puzzles(
+            all_parsed_sprites, symbols=symbols
+        )
 
     display_all_parsed_puzzles(converted_sprites)
 
