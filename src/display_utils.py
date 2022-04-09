@@ -1,6 +1,13 @@
 import matplotlib.pyplot as plt
 
 
+def display_all_parsed_puzzles(all_parsed_puzzles):
+    for puzzle in all_parsed_puzzles:
+        print(" ".join(str(sprite) for sprite in puzzle))
+
+    return
+
+
 def display_match(image, template, x, y):
     # Reference: https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_template.html
 
