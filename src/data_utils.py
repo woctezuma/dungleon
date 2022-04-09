@@ -13,6 +13,12 @@ def get_solution_image_folder():
     return folder_name
 
 
+def get_puzzle_name_pattern():
+    puzzle_folder = get_solution_image_folder()
+    file_ext = "jpg"
+    return f"{puzzle_folder}*.{file_ext}"
+
+
 def get_fname_for_character_sprites():
     return get_data_folder() + "characters.png"
 
