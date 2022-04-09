@@ -1,8 +1,7 @@
-import math
-
 import numpy as np
 from skimage.feature import match_template
 
+from src.convert_utils import convert_sprite_abscissa_to_index
 from src.display_utils import display_match
 
 
@@ -26,11 +25,6 @@ def match_puzzle_element(sprites, puzzle_element, block_width=None, verbose=Fals
     if verbose:
         print(f"Matched sprite index = {sprite_index}")
 
-    return sprite_index
-
-
-def convert_sprite_abscissa_to_index(sprite_abscissa, block_width):
-    sprite_index = math.floor(sprite_abscissa / block_width)
     return sprite_index
 
 
