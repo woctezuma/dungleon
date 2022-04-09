@@ -17,15 +17,15 @@ def display_match(image, template, x, y):
 
     ax1.imshow(image, cmap=plt.cm.gray)
     ax1.set_axis_off()
-    ax1.set_title('image')
+    ax1.set_title("image")
     # highlight matched region
     hcoin, wcoin = template.shape
-    rect = plt.Rectangle((x, y), wcoin, hcoin, edgecolor='r', facecolor='none')
+    rect = plt.Rectangle((x, y), wcoin, hcoin, edgecolor="r", facecolor="none")
     ax1.add_patch(rect)
 
     ax2.imshow(template, cmap=plt.cm.gray)
     ax2.set_axis_off()
-    ax2.set_title('template')
+    ax2.set_title("template")
 
     plt.show()
 
