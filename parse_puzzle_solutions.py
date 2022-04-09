@@ -37,7 +37,7 @@ def main(puzzle_index=0, element_index=0, debug=False):
             all_parsed_sprites, symbols=symbols
         )
 
-    display_all_parsed_puzzles(converted_sprites)
+        display_all_parsed_puzzles(converted_sprites)
 
     return True
 
