@@ -31,7 +31,7 @@ def main():
 
     show_image(puzzle_img)
 
-    puzzle_elements = extract_puzzle_elements(puzzle_img, trim_sprites=True)
+    puzzle_elements = extract_puzzle_elements(puzzle_img, trim_sprites=True, scale=1.0)
     for e in puzzle_elements:
         print(e.shape)
 
