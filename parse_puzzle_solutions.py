@@ -1,39 +1,31 @@
 from glob import glob
 
-from src.data_utils import (
-    get_solution_image_folder,
-    get_fname_for_character_names,
-)
-from src.image_utils import show_image
-from src.load_utils import load_txt, load_img
+from src.data_utils import get_puzzle_name_pattern
+from src.load_utils import load_img
+from src.match_utils import match_puzzle_element, convert_sprite_abscissa_to_index
 from src.puzzle_utils import extract_puzzle_elements
-from src.sprite_utils import (
-    load_sprites_as_img_list,
-    get_rescale_factor,
-    load_sprites_as_img,
-)
+from src.sprite_utils import get_rescale_factor, load_sprites_as_img
 
 
-def main():
-    character_names = load_txt(fname=get_fname_for_character_names())
+def main(puzzle_index=0, element_index=0):
+    # Sprites as a single image
+    sprites = load_sprites_as_img(scale=get_rescale_factor())
 
-    sprites_as_img = load_sprites_as_img(as_gray=True, scale=get_rescale_factor())
-    print(sprites_as_img.shape)
+    # NB: these blocks are squares anyway.
+    block_width = sprites.shape[0]
 
-    sprites = load_sprites_as_img_list(
-        as_gray=True, trim_sprites=True, scale=get_rescale_factor()
-    )
-    for name, e in zip(character_names, sprites):
-        print(f"{name} -> {e.shape}")
+    # Puzzle elements
+    puzzle_fnames = glob(get_puzzle_name_pattern())
+    puzzle_fname = puzzle_fnames[puzzle_index]
+    puzzle_elements = extract_puzzle_elements(load_img(puzzle_fname))
 
-    solution_fnames = glob(f"{get_solution_image_folder()}*.jpg")
-    puzzle_img = load_img(fname=solution_fnames[0], as_gray=True)
+    puzzle_element = puzzle_elements[element_index]
 
-    show_image(puzzle_img)
+    # Template matching
+    x = match_puzzle_element(sprites, puzzle_element, verbose=True)
+    sprite_index = convert_sprite_abscissa_to_index(x, block_width=block_width)
 
-    puzzle_elements = extract_puzzle_elements(puzzle_img, trim_sprites=True, scale=1.0)
-    for e in puzzle_elements:
-        print(e.shape)
+    print(f"Sprite index = {sprite_index}")
 
     return True
 
