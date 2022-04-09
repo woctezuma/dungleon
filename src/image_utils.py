@@ -46,6 +46,7 @@ def rescale_img_list(img_list, scale):
 
 
 def show_image(img, max_value=255):
+    img = np.array(img)
     img = img * max_value / img.max()
     Image.fromarray(img).show()
 
