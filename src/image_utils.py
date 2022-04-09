@@ -4,22 +4,22 @@ from PIL import Image
 from skimage.transform import rescale
 
 
-def binarize(img):
+def binarize(img, factor=1.0):
     threshold = skimage.filters.threshold_otsu(img)
-    binary_img = img < threshold
+    binary_img = img < threshold * factor
 
     return binary_img
 
 
-def compute_bbox(img):
-    binary_img = binarize(img)
+def compute_bbox(img, factor=1.0):
+    binary_img = binarize(img, factor=factor)
     bbox = Image.fromarray(binary_img).getbbox()
 
     return bbox
 
 
-def auto_crop(img):
-    bbox = compute_bbox(img)
+def auto_crop(img, factor=1.0):
+    bbox = compute_bbox(img, factor=factor)
     pil_img = Image.fromarray(img).crop(bbox)
 
     return np.array(pil_img)
