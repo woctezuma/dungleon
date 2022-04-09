@@ -17,7 +17,7 @@ def load_sprites_as_img(as_gray=True, scale=1.0):
     img = load_img(fname, as_gray=as_gray)
 
     if scale != 1:
-        print("Scaling the image by a factor {scale:.2f}")
+        print("Scaling aggregated sprites by a factor {scale:.2f}")
         img = rescale(img, scale)
 
     return img
@@ -32,6 +32,7 @@ def load_sprites_as_img_list(as_gray=True, trim_sprites=True, scale=1.0):
 
     if scale != 1:
         # NB: do not rescale() before extract_square_blocks(), or block shape might not divide the image shape!
+        print("Scaling individual sprites by a factor {scale:.2f}")
         sprites = rescale_img_list(sprites, scale)
 
     return sprites
