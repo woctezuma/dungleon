@@ -20,6 +20,7 @@ def extract_puzzle_elements(img, trim_sprites=True, verbose=True):
         print(f"#elements = {len(puzzle_elements)}")
 
     if trim_sprites:
+        print("Trimming individual puzzle elements.")
         puzzle_elements = auto_crop_img_list(puzzle_elements)
 
     return puzzle_elements

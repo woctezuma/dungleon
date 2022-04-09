@@ -28,6 +28,7 @@ def load_sprites_as_img_list(as_gray=True, trim_sprites=True, scale=1.0):
     sprites = extract_square_blocks(img)
 
     if trim_sprites:
+        print("Trimming individual sprites.")
         sprites = auto_crop_img_list(sprites)
 
     if scale != 1:
