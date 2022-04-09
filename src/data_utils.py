@@ -17,12 +17,20 @@ def get_fname_for_character_sprites():
     return get_data_folder() + "characters.png"
 
 
+def get_fname_for_character_markdown():
+    return get_data_folder() + "characters.md"
+
+
 def get_fname_for_character_names():
     return get_data_folder() + "characters.txt"
 
 
 def get_fname_for_character_emojis():
     return get_data_folder() + "emojis.txt"
+
+
+def get_fname_for_solution_markdown():
+    return get_data_folder() + "solutions.md"
 
 
 def get_fname_for_solution_urls():
