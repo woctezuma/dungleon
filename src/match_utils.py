@@ -4,7 +4,11 @@ import math
 from src.display_utils import display_match
 
 
-def match_puzzle_element(sprites, puzzle_element, verbose=False):
+def match_puzzle_element(sprites, puzzle_element, block_width=None, verbose=False):
+    if block_width is None:
+        # NB: these blocks are squares anyway.
+        block_width = sprites.shape[0]
+
     # Reference: https://scikit-image.org/docs/stable/auto_examples/features_detection/plot_template.html
 
     result = match_template(sprites, puzzle_element)
@@ -15,7 +19,12 @@ def match_puzzle_element(sprites, puzzle_element, verbose=False):
         print(f"Match (ordinate, abscissa): (y, x) = ({y}, {x})")
         display_match(image=sprites, template=puzzle_element, x=x, y=y)
 
-    return x
+    sprite_index = convert_sprite_abscissa_to_index(x, block_width=block_width)
+
+    if verbose:
+        print(f"Matched sprite index = {sprite_index}")
+
+    return sprite_index
 
 
 def convert_sprite_abscissa_to_index(sprite_abscissa, block_width):
