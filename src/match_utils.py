@@ -12,7 +12,7 @@ def match_puzzle_element(sprites, puzzle_element, verbose=False):
     x, y = ij[::-1]
 
     if verbose:
-        print(f"Match coordinates: (y, x) = ({y}, {x}), respectively (ordinate, abscissa).")
+        print(f"Match (ordinate, abscissa): (y, x) = ({y}, {x})")
         display_match(image=sprites, template=puzzle_element, x=x, y=y)
 
     return x
