@@ -9,7 +9,7 @@ This repository contains Python code to study the hidden rules of Dungleon.
 [![Sprites][img-sprites]][img-sprites-original]
 
 As official emojis:
-:bow_and_arrow: :bat: :moneybag: :yellow_circle: :dragon_face: :frog: :japanese_goblin: :crown: :woman_mage: :imp: :japanese_ogre: :skull: :spider: :bust_in_silhouette: :no_entry_sign: :trophy: :man_farmer: :person_fencing: :man_mage: :zombie:
+:bow_and_arrow: :bat: :moneybag: :yellow_circle: :dragon_face: :frog: :japanese_goblin: :crown: 🧙‍♀️ :imp: :japanese_ogre: :skull: :spider: :bust_in_silhouette: :no_entry_sign: :trophy: :man_farmer: :person_fencing: 🧙‍♂️ :zombie:
 
 ## Requirements
 
