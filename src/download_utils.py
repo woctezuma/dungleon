@@ -1,6 +1,7 @@
 import shutil
 
 import requests
+import pathlib
 
 
 def get_file_ext(url):
@@ -25,6 +26,9 @@ def download_files(urls, output_folder):
         file_no = f"{i:03}"
         file_ext = get_file_ext(url)
         output_fname = f"{output_folder}{file_no}.{file_ext}"
+
+        if pathlib.Path(output_fname).exists():
+            continue
 
         print(f"[{i:03}/{num_files:03}] Downloading {url} to {output_fname}")
         download_file(url, output_fname)
