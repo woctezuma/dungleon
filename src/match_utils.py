@@ -7,7 +7,7 @@ from src.image_utils import auto_crop
 
 
 def match_puzzle_element(
-    sprites, puzzle_element, block_width=None, factor=0.92, verbose=False
+    sprites, puzzle_element, block_width=None, factor=0.87, verbose=False
 ):
     if block_width is None:
         # NB: these blocks are squares anyway.
