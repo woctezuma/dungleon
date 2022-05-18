@@ -91,3 +91,11 @@
 :ma: :wa: :sk: :co: :co:
 :ki: :ar: :ch: :ba: :ba:
 :vi: :ar: :co: :co: :wi:
+:ki: :ma: :fr: :ch: :ch:
+:th: :ar: :ch: :ch: :ty:
+:vi: :wa: :sk: :ch: :ty:
+:ch: :wa: :ba: :ba: :ch:
+:ar: :co: :co: :co: :wi:
+:fr: :ma: :ba: :sk: :ba:
+:ar: :ch: :dr: :ch: :ty:
+:ar: :wa: :tr: :sk: :wi:
