@@ -12,7 +12,7 @@
 :sk:
 :sp:
 :th:
-N/A
+:tr:
 :ty:
 :vi:
 :wa:

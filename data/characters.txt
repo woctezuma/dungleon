@@ -12,7 +12,7 @@ Axe Orc
 Skeleton
 Spider
 Bandit
-N/A
+Troll
 Relic
 Villager
 Knight
