@@ -42,6 +42,7 @@ After this step, you should have generated a file identical to [`data/solutions.
 
 - The [official website][game]
 - An [archive of solutions][solutions]
+- [Rules][wiki-rules] found by the community of players
 
 [python-download]: <https://www.python.org/downloads/>
 [game]: <https://www.dungleon.com/>
@@ -51,3 +52,4 @@ After this step, you should have generated a file identical to [`data/solutions.
 [img-sprites-original]: <https://www.dungleon.com/images/elements/big/sprites.png>
 [template-matching]: <https://github.com/woctezuma/dungleon/wiki/img/template_matching.png>
 [solutions-markdown]: <data/solutions.md>
+[wiki-rules]: <https://github.com/woctezuma/dungleon/wiki/Rules>
