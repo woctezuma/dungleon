@@ -43,6 +43,7 @@ After this step, you should have generated a file identical to [`data/solutions.
 - The [official website][game]
 - An [archive of solutions][solutions]
 - [Rules][wiki-rules] found by the community of players
+- A study of [the best starter guesses][dungleon-starter-guesses]
 
 [python-download]: <https://www.python.org/downloads/>
 [game]: <https://www.dungleon.com/>
@@ -53,3 +54,4 @@ After this step, you should have generated a file identical to [`data/solutions.
 [template-matching]: <https://github.com/woctezuma/dungleon/wiki/img/template_matching.png>
 [solutions-markdown]: <data/solutions.md>
 [wiki-rules]: <https://github.com/woctezuma/dungleon/wiki/Rules>
+[dungleon-starter-guesses]: <https://github.com/woctezuma/dungleon-bot>
