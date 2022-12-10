@@ -219,7 +219,7 @@
 :ar: :co: :ba: :co: :ba:
 :wi: :ba: :go: :fr: :ba:
 :co: :wa: :sk: :co: :wi:
-:wi: :tr: :fr: :sp: :sp:
+:ma: :tr: :fr: :sp: :sp:
 :zo: :ne: :co: :sk: :co:
 :ma: :or: :ba: :ba: :fr:
 :th: :zo: :ne: :ch: :ty:
