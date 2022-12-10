@@ -84,7 +84,7 @@
 :ar: :ch: :ba: :ba: :wi:
 :ma: :wa: :sp: :sp: :fr:
 :zo: :zo: :ne: :ba: :ba:
-:zo: :th: :sp: :ne: :sp:
+:zo: :sp: :sp: :ne: :sp:
 :ar: :vi: :or: :go: :ty:
 :wa: :sk: :sk: :ch: :sk:
 :wa: :go: :or: :ch: :ty:
