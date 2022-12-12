@@ -217,7 +217,7 @@
 :zo: :vi: :ne: :ch: :ty:
 :vi: :wa: :ba: :ba: :ty:
 :ar: :co: :ba: :co: :ba:
-:wi: :ba: :go: :fr: :ba:
+:ma: :ba: :go: :fr: :ba:
 :co: :wa: :sk: :co: :wi:
 :ma: :tr: :fr: :sp: :sp:
 :zo: :ne: :co: :sk: :co:
