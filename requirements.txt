@@ -1,4 +1,5 @@
 matplotlib
+mediapy
 PyQt5
 requests
 scikit-image
