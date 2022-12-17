@@ -1,4 +1,4 @@
-import skimage
+import skimage.io
 
 
 def load_txt(fname, verbose=True):

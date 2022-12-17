@@ -1,6 +1,6 @@
 import math
 
-import skimage
+import skimage.util
 
 
 def extract_square_blocks(img):

@@ -1,5 +1,5 @@
 import numpy as np
-import skimage
+import skimage.filters
 from PIL import Image
 from skimage.transform import rescale
 
