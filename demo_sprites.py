@@ -1,9 +1,10 @@
+import mediapy as media
+
 from src.data_utils import (
     get_fname_for_character_names,
     get_fname_for_character_emojis,
     get_fname_for_character_markdown,
 )
-from src.image_utils import show_image
 from src.load_utils import load_txt
 from src.sprite_utils import load_sprites_as_img_list, load_sprites_as_img
 
@@ -25,7 +26,7 @@ def main():
         print(f"- {mark}\t{emoji:5}\t{name} -> {e.shape}")
 
     print(f"Sprites -> {sprites_as_img.shape}")
-    show_image(sprites_as_img)
+    media.show_image(sprites_as_img)
 
     return True
 

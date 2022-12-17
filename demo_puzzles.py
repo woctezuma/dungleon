@@ -1,7 +1,8 @@
+import mediapy as media
+
 from glob import glob
 
 from src.data_utils import get_puzzle_name_pattern
-from src.image_utils import show_image
 from src.load_utils import load_img
 from src.puzzle_utils import extract_puzzle_elements
 
@@ -21,7 +22,7 @@ def main(puzzle_index=0):
         print(f"Puzzle element n°{i} -> {e.shape}")
 
     print(f"Puzzle {puzzle_fname} -> {puzzle_img.shape}")
-    show_image(puzzle_img)
+    media.show_image(puzzle_img)
 
     return True
 
