@@ -31,7 +31,7 @@ python download_puzzle_solutions.py
 2) To parse puzzles solutions with template matching, run:
 
 ```bash
-python download_puzzle_solutions.py 
+python parse_puzzle_solutions.py
 ```
 
 After this step, you should have generated a file identical to [`data/solutions.md`][solutions-markdown].
