@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Match image templates with solutions
+
 1) To download puzzles solutions for previous days, run:
 
 ```bash
@@ -37,6 +39,11 @@ python parse_puzzle_solutions.py
 After this step, you should have generated a file identical to [`data/solutions.md`][solutions-markdown].
 
 ![Template matching][template-matching]
+
+### Analyze patterns in solutions
+
+To analyze patterns in solutions, run [`dungleon.ipynb`][colab-notebook]
+[![Open In Colab][colab-badge]][colab-notebook]
 
 ## References
 
@@ -55,3 +62,5 @@ After this step, you should have generated a file identical to [`data/solutions.
 [solutions-markdown]: <data/solutions.md>
 [wiki-rules]: <https://github.com/woctezuma/dungleon/wiki/Rules>
 [dungleon-starter-guesses]: <https://github.com/woctezuma/dungleon-bot>
+[colab-notebook]: <https://colab.research.google.com/github/woctezuma/dungleon/blob/colab/notebook/dungleon.ipynb>
+[colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
