@@ -229,7 +229,6 @@
 :th: :ar: :co: :co: :sk:
 :th: :ar: :co: :co: :wi:
 :th: :ar: :co: :sk: :co:
-:th: :ar: :tr: :go: :or:
 :th: :ma: :ba: :fr: :ba:
 :th: :ma: :fr: :ch: :wi:
 :th: :ma: :fr: :sp: :sp:
