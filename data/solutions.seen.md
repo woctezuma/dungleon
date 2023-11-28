@@ -80,7 +80,6 @@
 :ar: :wa: :tr: :ba: :ba:
 :ar: :wa: :tr: :go: :or:
 :ar: :wa: :tr: :sk: :wi:
-:ca: :ar: :ca: :sk: :ca:
 :ch: :ar: :ch: :ba: :ba:
 :ch: :ar: :ch: :ch: :dr:
 :ch: :ar: :ch: :ch: :wi:
