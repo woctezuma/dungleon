@@ -88,7 +88,7 @@
 :ar: :vi: :or: :go: :ty:
 :wa: :sk: :sk: :ch: :sk:
 :wa: :go: :or: :ch: :ty:
-:ma: :wa: :sk: :co: :co:
+:ki: :wa: :sk: :co: :co:
 :ki: :ar: :ch: :ba: :ba:
 :vi: :ar: :co: :co: :wi:
 :ki: :ma: :fr: :ch: :ch:
@@ -211,7 +211,7 @@
 :vi: :ar: :ch: :go: :or:
 :ar: :ma: :fr: :ba: :wi:
 :ki: :zo: :go: :ne: :or:
-:wi: :sp: :ch: :fr: :sp:
+:ma: :sp: :ch: :fr: :sp:
 :zo: :ne: :fr: :go: :or:
 :ki: :wa: :tr: :or: :go:
 :zo: :vi: :ne: :ch: :ty:
@@ -258,12 +258,12 @@
 :ma: :fr: :ch: :ba: :ch:
 :vi: :wa: :go: :or: :wi:
 :ch: :ar: :co: :sk: :co:
-:th: :zo: :co: :co: :ne:
+:ki: :zo: :co: :co: :ne:
 :ar: :wa: :tr: :ba: :ba:
 :th: :zo: :ba: :ba: :ne:
 :ar: :vi: :tr: :or: :go:
 :wa: :or: :go: :co: :co:
-:ch: :wa: :go: :or: :ch:
+:ch: :wa: :go: :ch: :or:
 :ch: :wa: :or: :go: :ty:
 :wa: :or: :ba: :ba: :go:
 :vi: :ma: :sp: :fr: :sp:
