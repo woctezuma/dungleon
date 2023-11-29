@@ -243,7 +243,7 @@
 :th: :wa: :tr: :ba: :ba:
 :wa: :or: :sk: :go: :sk:
 :vi: :ma: :fr: :ch: :ty:
-:th: :ar: :ch: :or: :go:
+:th: :ar: :ch: :go: :or:
 :wa: :tr: :sk: :sk: :sk:
 :co: :ma: :fr: :go: :co:
 :th: :ar: :co: :sk: :co:
