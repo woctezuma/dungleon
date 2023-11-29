@@ -99,7 +99,6 @@
 :ch: :wa: :ba: :ba: :wi:
 :ch: :wa: :dr: :ch: :ty:
 :ch: :wa: :go: :ch: :or:
-:ch: :wa: :go: :or: :ch:
 :ch: :wa: :or: :go: :ty:
 :ch: :wa: :or: :go: :wi:
 :ch: :zo: :co: :co: :ne:
@@ -217,7 +216,6 @@
 :ma: :wa: :fr: :co: :co:
 :ma: :wa: :fr: :go: :ty:
 :ma: :wa: :fr: :sp: :sp:
-:ma: :wa: :sk: :co: :co:
 :ma: :wa: :sk: :or: :fr:
 :ma: :wa: :sp: :sp: :fr:
 :ma: :wa: :tr: :fr: :go:
@@ -246,7 +244,6 @@
 :th: :wa: :tr: :sk: :sk:
 :th: :zo: :ba: :ba: :ne:
 :th: :zo: :ch: :ne: :ty:
-:th: :zo: :co: :co: :ne:
 :th: :zo: :co: :ne: :co:
 :th: :zo: :fr: :ne: :ty:
 :th: :zo: :ne: :ch: :ty:
@@ -338,7 +335,6 @@
 :wa: :tr: :sk: :sk: :sk:
 :wa: :tr: :sk: :sk: :wi:
 :wa: :tr: :sp: :sp: :sp:
-:wi: :sp: :ch: :fr: :sp:
 :zo: :ba: :fr: :ba: :ty:
 :zo: :ba: :sk: :ba: :ne:
 :zo: :co: :ch: :ne: :co:
