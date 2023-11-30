@@ -22,6 +22,11 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Analyze patterns in solutions
+
+To analyze patterns in solutions, run [`dungleon.ipynb`][colab-notebook]
+[![Open In Colab][colab-badge]][colab-notebook]
+
 ### Match image templates with solutions
 
 1) To download puzzles solutions for previous days, run:
@@ -39,11 +44,6 @@ python parse_puzzle_solutions.py
 After this step, you should have generated a file identical to [`data/solutions.md`][solutions-markdown].
 
 ![Template matching][template-matching]
-
-### Analyze patterns in solutions
-
-To analyze patterns in solutions, run [`dungleon.ipynb`][colab-notebook]
-[![Open In Colab][colab-badge]][colab-notebook]
 
 ## References
 
